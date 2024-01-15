@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hackathonde02</title>
+    <link rel="stylesheet" href="https://fonts.google.com/specimen/DM+Sans?query=DM+">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
+</head>
+<style>
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header{
+    margin: 20px 100px;
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+.navbarcon{
+    width: 609px;
+    height: 26px;
+    display: flex;
+    justify-content: space-around;
+    font-family: DM Sans;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 26px;
+    letter-spacing: 0px;
+    text-align: center;
+    color: rgba(102, 102, 102, 1);
+;
+}
+.group-1{
+    width: 130px;
+    height: 32px;
+}
+.component{
+    margin-top: 150px;
+    display: flex;
+    justify-content: space-between;
+}
+.mytechstack h2{
+    margin-top: 100px;
+    font-family: Poppins;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 26px;
+    letter-spacing: 0px;
+    text-align: center;
+    color: rgba(66, 68, 110, 1);
+
+}
+.mytechstack p{
+    margin-top: 60px;
+    font-family: Poppins;
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 26px;
+    letter-spacing: 0px;
+    text-align: center;
+    color: rgba(102, 102, 102, 1);
+}
+.techstack{
+    margin: 100px 100px ;
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    gap: 50px;
+}
+.project h2{
+    font-family: Poppins;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 26px;
+    letter-spacing: 0px;
+    text-align: center;
+    color: rgba(66, 68, 110, 1);
+;
+}
+.project p{
+    margin-top: 30px;
+    font-family: Poppins;
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 26px;
+    letter-spacing: 0px;
+    text-align: center;
+    color: rgba(102, 102, 102, 1);
+}
+.myprojects{
+    margin: 50px 100px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 30px;
+}
+.content{
+    background: rgba(255, 255, 255, 1);
+    box-shadow: 2px 2px 100px 0px rgba(0, 0, 0, 0.2);  
+    width: 375px;
+    height: 567px;
+    border-radius: 20px
+}
+.tile{
+    font-family: Poppins;
+    font-size: 28px;
+    font-weight: 500;
+    line-height: 26px;
+    letter-spacing: 0px;
+    text-align: center;
+    padding: 20px;
+}
+.sample{
+    font-family: Poppins;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 26px;
+    letter-spacing: 0px;
+    text-align: left;
+    color: rgba(102, 102, 102, 1);
+    margin: 5px 25px;
+}
+.stack{
+    font-family: Poppins;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 26px;
+    letter-spacing: 0px;
+    text-align: left;
+    margin-left: 25px;
+}
+.link-git{
+    display: flex;
+    justify-content: space-around;
+    margin: 15px;
+    font-family: Poppins;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    letter-spacing: 0px;
+    text-align: left;
+}
+footer{
+    margin: 100px 100px 50px 100px;
+}
+.footer-1{
+    display: grid;
+    grid-template-columns:55% 15% 15% 15% ;
+    align-items: center;
+    font-family:  DM Sans;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 26px;
+    letter-spacing: 0px;
+    text-align: left;
+    margin-bottom: 20px;
+    color: rgba(66, 68, 110, 1);
+}
+.footer-2{
+    display: flex;
+    justify-content: space-between;
+    margin-top:  20px; ;
+}
+.menu-2{
+    display: grid;
+    width: 554px;
+    grid-template-columns: repeat(5,1fr);
+    column-gap: 30px;
+    font-family: DM Sans;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 26px;
+    letter-spacing: 0px;
+    text-align: left;
+    color: rgba(66, 68, 110, 1);
+}
+.group-1{
+    width: 130px;
+    display: flex;
+    justify-content: space-between;
+}
+.group-2{
+    width: 130px;
+    display: flex;
+    justify-content: space-between;
+}
+.footer-3{
+    display: flex;
+    font-family: Poppins;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 26px;
+    letter-spacing: 0px;
+    text-align: center;
+    color: rgba(102, 102, 102, 1);
+}
+.nicolas{
+    width: 636px;
+    height: 297px;
+    font-family: Poppins;
+    font-size: 58px;
+    font-weight: 700;
+    line-height: 70px;
+    letter-spacing: -1px;
+    text-align: left;
+
+}
+.animated-text {
+    font-size: 58px;
+    font-weight: bold;
+    background: linear-gradient(to right, rgba(0, 253, 238, 1), rgba(143, 0, 255, 1));
+    -webkit-background-clip: text;
+    color: transparent;
+    animation: colorChange 5s linear infinite;
+}
+
+@keyframes colorChange {
+    0% {
+    background-position: 100% 0;
+    }
+    100% {
+    background-position: -100% 0;
+    }
+}.animated-text2{
+    margin-left: 2px;
+    margin-right: 2px;
+    font-family: Poppins;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 26px;
+    letter-spacing: 0px;
+    text-align: center;
+    background: linear-gradient(to right, rgba(0, 253, 238, 1), rgba(143, 0, 255, 1));
+    -webkit-background-clip: text;
+    color: transparent;
+    animation: colorChange 5s linear infinite;
+}
+#navhome:hover{
+    color: lightcoral;
+}
+#navabout:hover{
+    color: lightcoral;
+}
+#navtechstack:hover{
+    color: lightcoral;
+}
+#navproject:hover{
+    color: lightcoral;
+}
+#navcontact:hover{
+    color: lightcoral;
+}
+.phone:hover{
+    text-decoration: underline;
+    color: blue;
+}
+.email:hover{
+    text-decoration: underline;
+    color: blue;
+}
+.content:hover{
+    box-shadow: 1px 1px 5px 0px rgb(0, 252, 113);
+}
+.tech{
+    text-align: center;
+}
+.tech:hover{
+    box-shadow: 2px 2px 10px 0px lightseagreen; 
+}
+</style>
+<body>
+<header>
+    <div class="navbar">
+        <div class="content-1"><img src="logo 1.png" alt="logo" width="97px" height="59px"></div>
+        <div class="navbarcon">
+            <div id="navhome">Home</div>
+            <div id="navabout">About</div>
+            <div id="navtechstack">Tech Stack</div>
+            <div id="navproject">Projects</div>
+            <div id="navcontact">Contact</div>
+        </div>
+        <div class="group-1">
+            <img src="akar-icons_github-fill.png" alt="logogit" width="30px" height="30px">
+            <img src="ant-design_twitter-circle-filled.png" alt="logox">
+            <img src="entypo-social_linkedin-with-circle.png" alt="logoin">
+        </div>
+    </div>
+    <div class="component">
+        <div class="nicolas">
+            <div>Hi 👋,<br>
+                My name is
+                <div class="animated-text">Nicolas Vargas</div>   
+                I build things for web</div>
+            </div>        
+        <img src="50353683 1.png" alt="" width="350px" height="350px">
+    </div>
+</header>
+    <div class="mytechstack">
+        <h2>My Tech Stack</h2>
+        <p> Technologies I've been working with recently</p>
+    </div>
+    <div class="techstack">
+        <div class="tech tech-1"><img src="vscode-icons_file-type-html.png" alt="html-icon" width="120px" height="120px"></div>
+        <div class="tech tech-2"><img src="vscode-icons_file-type-css.png" alt="css-icon" width="120px" height="119px"></div>
+        <div class="tech tech-3"><img src="vscode-icons_file-type-js-official.png" alt="js-icon" width="120px" height="120px"></div>
+        <div class="tech tech-4"><img src="logos_react.png" alt="react-icon" width="113px" height="101px"></div>
+        <div class="tech tech-5"><img src="Vector.png" alt="vector-icon" width="105px" height="100px"></div>
+        <div class="tech tech-6"><img src="logos_bootstrap.png" alt="btrap-icon" width="88px" height="88px"></div>
+        <div class="tech tech-7"><img src="vscode-icons_file-type-tailwind.png" alt="tai-icon" width="131px" height="131px"></div>
+        <div class="tech tech-8"><img src="logos_sass.png" alt="sass-icon" height="87px" width="117px"></div>
+        <div class="tech tech-9"><img src="logos_git-icon.png" alt="git" width="105px" height="105px"></div>
+        <div class="tech tech-10"><img src="cib_greensock.png" alt="gsock" width="120px" height="120px"></div>
+        <div class="tech tech-11"><img src="vscode-icons_file-type-vscode.png" alt="vscode" width="112px" height="112px"></div>
+        <div class="tech tech-12"><img src="akar-icons_github-fill.png" alt="gith" width="88px" height="88px"></div>
+    </div>
+    <div class="project">
+        <h2>Projects</h2>
+        <p>Things I've built so far</p>
+    </div>
+    <div class="myprojects">
+        <div class="content content-1">
+            <img src="Rectangle 4.png" alt="img-1">
+            <p class="tile">Project Tile goes here</p>
+            <p class="sample">This is sample project description random things are here in description This is sample project lorem ipsum generator for dummy content</p>
+            <p class="stack"><b>Tech stack :</b> HTML , JavaScript, SASS, React</p>
+            <div class="link-git"><p><i class="fa-solid fa-link"></i><u>Live Priview</u></p>
+            <p><i class="fa-brands fa-github"></i><u>View Code</u></p></div>
+        </div>
+        <div class="content content-2">
+            <img src="Rectangle 6.png" alt="img-2">
+            <p class="tile">Project Tile goes here</p>
+            <p class="sample">This is sample project description random things are here in description This is sample project lorem ipsum generator for dummy content</p>
+            <p class="stack"><b>Tech stack :</b> HTML , JavaScript, SASS, React</p>
+            <div class="link-git"><p><i class="fa-solid fa-link"></i><u>Live Priview</u></p>
+            <p><i class="fa-brands fa-github"></i><u>View Code</u></p></div>
+        </div>
+        <div class="content content-3">
+            <img src="Rectangle 8.png" alt="img-3">
+            <p class="tile">Project Tile goes here</p>
+            <p class="sample">This is sample project description random things are here in description This is sample project lorem ipsum generator for dummy content</p>
+            <p class="stack"><b>Tech stack :</b> HTML , JavaScript, SASS, React</p>
+            <div class="link-git"><p><i class="fa-solid fa-link"></i><u>Live Priview</u></p>
+            <p><i class="fa-brands fa-github"></i><u>View Code</u></p></div>
+        </div>
+        <div class="content content-4">
+            <img src="Rectangle 12.png" alt="img-4">
+            <p class="tile">Project Tile goes here</p>
+            <p class="sample">This is sample project description random things are here in description This is sample project lorem ipsum generator for dummy content</p>
+            <p class="stack"><b>Tech stack :</b> HTML , JavaScript, SASS, React</p>
+            <div class="link-git"><p><i class="fa-solid fa-link"></i><u>Live Priview</u></p>
+            <p><i class="fa-brands fa-github"></i><u>View Code</u></p></div>
+        </div>
+        <div class="content content-5">
+            <img src="Rectangle 13.png" alt="img-5">
+            <p class="tile">Project Tile goes here</p>
+            <p class="sample">This is sample project description random things are here in description This is sample project lorem ipsum generator for dummy content</p>
+            <p class="stack"><b>Tech stack :</b> HTML , JavaScript, SASS, React</p>
+            <div class="link-git"><p><i class="fa-solid fa-link"></i><u>Live Priview</u></p>
+            <p><i class="fa-brands fa-github"></i><u>View Code</u></p></div>
+        </div>
+        <div class="content content-6">
+            <img src="Rectangle 14.png" alt="img-6">
+            <p class="tile">Project Tile goes here</p>
+            <p class="sample">This is sample project description random things are here in description This is sample project lorem ipsum generator for dummy content</p>
+            <p class="stack"><b>Tech stack :</b> HTML , JavaScript, SASS, React</p>
+            <div class="link-git"><p><i class="fa-solid fa-link"></i><u>Live Priview</u></p>
+            <p><i class="fa-brands fa-github"></i><u>View Code</u></p></div>
+        </div>
+    </div>
+<footer>
+    <div class="footer-1">
+        <img src="logo 2.png" alt="logo2" width="97px" height="59px">
+        <div class="phone">+91 12345 09876</div>
+        <div class="email">info@example.com</div>
+        <div class="group-2">
+            <img src="akar-icons_github-fill.png" alt="logogit" width="30px" height="30px">
+            <img src="ant-design_twitter-circle-filled.png" alt="logox">
+            <img src="entypo-social_linkedin-with-circle.png" alt="logoin">
+        </div>
+    </div>
+    <hr>
+    <div class="footer-2">
+        <div class="menu-2">
+            <div id="navhome">Home</div>
+            <div id="navabout">About</div>
+            <div id="navtechstack">Technologies</div>
+            <div id="navproject">Projects</div>
+            <div id="navcontact">Contact</div>
+        </div>
+        <div class="footer-3">
+            Designed and built by  <div class="animated-text2"> Pavan MG </div> with <div class="animated-text2"> Love</div> & <div class="animated-text2">Coffee</div>
+        </div>
+    </div>
+</footer>
+</body>
+</html>
